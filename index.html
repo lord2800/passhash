@@ -8,7 +8,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
 
 <style>
-<!--!skin:passhash-portable.css-->
 body {
     background-color: #eeffee;
     font-family: arial;
@@ -107,7 +106,6 @@ li {
 </style>
 
 <script>
-<!--!content:passhash-portable.js-->
 var browser = new Object();
 browser.version = parseInt(navigator.appVersion);
 browser.isNetscape = false;
@@ -326,7 +324,6 @@ function onLeaveSelectSiteTag(fld)
 </script>
 
 <script language="JavaScript" type="text/javascript">
-<!--!content:passhash-sha1.js-->
 /*
  * A JavaScript implementation of the Secure Hash Algorithm, SHA-1, as defined
  * in FIPS PUB 180-1
@@ -554,8 +551,7 @@ function binb2b64(binarray)
 }
 </script>
 
-<script language="JavaScript" type="text/javascript">
-<!--!content:passhash-common.js-->
+<script>
 /* ***** BEGIN LICENSE BLOCK *****
  * Version: MPL 1.1/GPL 2.0/LGPL 2.1
  *
@@ -1364,86 +1360,74 @@ var PassHashCommon =
                 </tr>
                 <tr>
                     <td >
-                        <select id="site-tag-list" class="formfield"
-                        onFocus="onEnterField(this, 'Select from your previously-used site tags');"
-                        onBlur="onLeaveSelectSiteTag(this);"
-                        onChange="onSelectSiteTag(this);"
-                        >
-<option selected></option>
-<option value="dpm16">37signals</option>
-<option value="dpm16">adobe</option>
-<option value="dpm16">adp:2</option>
-<option value="dpm16">afraid</option>
-<option value="dpm16">apiary</option>
-<option value="dpm16">apple</option>
-<option value="dpm16">altassian</option>
-<option value="dpm16">atlassian</option>
-<option value="dpmr12">avalonaccess</option>
-<option value="dpm16">battle:2</option>
-<option value="dpm16">bigcommerce</option>
-<option value="dpm16">bitbucket</option>
-<option value="dpm16">cableanytime</option>
-<option value="dpm16">37signals</option>
-<option value="dpm16">cloudflare</option>
-<option value="dpm16">crashlytics</option>
-<option value="dpm16">demonoid</option>
-<option value="dpm16">di</option>
-<option value="dpm16">digitalocean</option>
-<option value="dpm12">flex-plan</option>
-<option value="dpm16">github</option>
-<option value="dpm16">gobank</option>
-<option value="dpm16">google:2</option>
-<option value="dpm16">grubhub</option>
-<option value="dpm16">heroku</option>
-<option value="dpmr16">insperity</option>
-<option value="dpm16">jawbone</option>
-<option value="dpm16">jira</option>
-<option value="dpm16">libyanspider</option>
-<option value="dpmr16">linkedin</option>
-<option value="dpm16">lithium</option>
-<option value="dpm16">live</option>
-<option value="dpm16">magentocommerce</option>
-<option value="dpm16">mailtrap</option>
-<option value="dpm16">microsoftonline</option>
-<option value="dpm16">mixpanel</option>
-<option value="dpm16">mongolab</option>
-<option value="dpm16">movreel</option>
-<option value="dpm16">namecheap</option>
-<option value="dpm16">newegg</option>
-<option value="dpm16">newrelic</option>
-<option value="dpm16">opensubtitles</option>
-<option value="dpm16">packagist</option>
-<option value="dpmr14">perfectworld</option>
-<option value="dpmr16">pge</option>
-<option value="dpm16">pizzahut</option>
-<option value="dpmr14">perfectworld</option>
-<option value="dpm16">reddit</option>
-<option value="dpm12">safeway</option>
-<option value="dpm16">sapjam</option>
-<option value="dpm16">saucelabs</option>
-<option value="dpm16">sonic</option>
-<option value="dpm16">speed</option>
-<option value="dpm16">sprint</option>
-<option value="dpm16">stelladot:1</option>
-<option value="dpm16">stelladot:1</option>
-<option value="dpm16">stelladot:1</option>
-<option value="dpm16">stelladot</option>
-<option value="dpm16">stripe</option>
-<option value="dpm16">successfactors</option>
-<option value="dpm16">taxact</option>
-<option value="dpm16">taxactonline</option>
-<option value="dpm16">what</option>
-<option value="dpm16">wordpress</option>
-<option value="dpm16">zendesk</option>
+                        <select id="site-tag-list" class="formfield" onFocus="onEnterField(this, 'Select from your previously-used site tags');" onBlur="onLeaveSelectSiteTag(this);" onChange="onSelectSiteTag(this);">
+                            <option selected></option>
+                            <option value="dpm16">37signals</option>
+                            <option value="dpm16">adobe</option>
+                            <option value="dpm16">adp:2</option>
+                            <option value="dpm16">afraid</option>
+                            <option value="dpm16">apiary</option>
+                            <option value="dpm16">apple</option>
+                            <option value="dpm16">altassian</option>
+                            <option value="dpm16">atlassian</option>
+                            <option value="dpmr12">avalonaccess</option>
+                            <option value="dpm16">battle:2</option>
+                            <option value="dpm16">bigcommerce</option>
+                            <option value="dpm16">bitbucket</option>
+                            <option value="dpm16">cableanytime</option>
+                            <option value="dpm16">37signals</option>
+                            <option value="dpm16">cloudflare</option>
+                            <option value="dpm16">crashlytics</option>
+                            <option value="dpm16">demonoid</option>
+                            <option value="dpm16">di</option>
+                            <option value="dpm16">digitalocean</option>
+                            <option value="dpm12">flex-plan</option>
+                            <option value="dpm16">github</option>
+                            <option value="dpm16">gobank</option>
+                            <option value="dpm16">google:2</option>
+                            <option value="dpm16">grubhub</option>
+                            <option value="dpm16">heroku</option>
+                            <option value="dpmr16">insperity</option>
+                            <option value="dpm16">jawbone</option>
+                            <option value="dpm16">jira</option>
+                            <option value="dpm16">libyanspider</option>
+                            <option value="dpmr16">linkedin</option>
+                            <option value="dpm16">lithium</option>
+                            <option value="dpm16">live</option>
+                            <option value="dpm16">magentocommerce</option>
+                            <option value="dpm16">mailtrap</option>
+                            <option value="dpm16">microsoftonline</option>
+                            <option value="dpm16">mixpanel</option>
+                            <option value="dpm16">mongolab</option>
+                            <option value="dpm16">movreel</option>
+                            <option value="dpm16">namecheap</option>
+                            <option value="dpm16">newegg</option>
+                            <option value="dpm16">newrelic</option>
+                            <option value="dpm16">opensubtitles</option>
+                            <option value="dpm16">packagist</option>
+                            <option value="dpmr14">perfectworld</option>
+                            <option value="dpmr16">pge</option>
+                            <option value="dpm16">pizzahut</option>
+                            <option value="dpmr14">perfectworld</option>
+                            <option value="dpm16">reddit</option>
+                            <option value="dpm12">safeway</option>
+                            <option value="dpm16">sapjam</option>
+                            <option value="dpm16">saucelabs</option>
+                            <option value="dpm16">sonic</option>
+                            <option value="dpm16">speed</option>
+                            <option value="dpm16">sprint</option>
+                            <option value="dpm16">stripe</option>
+                            <option value="dpm16">taxact</option>
+                            <option value="dpm16">taxactonline</option>
+                            <option value="dpm16">what</option>
+                            <option value="dpm16">wordpress</option>
+                            <option value="dpm16">zendesk</option>
                         </select>
                     </td>
                 </tr>
                 <tr>
                     <td >
-                        <input id="site-tag" class="formfield"
-                        onFocus="onEnterField(this, 'Site or other name, e.g. google');"
-                        onBlur="onLeaveField(this);"
-                        />
+                        <input id="site-tag" class="formfield" onFocus="onEnterField(this, 'Site or other name, e.g. google');" onBlur="onLeaveField(this);" />
                     </td>
                 </tr>
                 <tr>
@@ -1451,10 +1435,7 @@ var PassHashCommon =
                 </tr>
                 <tr>
                     <td >
-                        <input id="master-key" type="password" class="password" phNoMarkers
-                        onFocus="onEnterField(this, 'Master key');"
-                        onBlur="onLeaveField(this);"
-                        />
+                        <input id="master-key" type="password" class="password" phNoMarkers onFocus="onEnterField(this, 'Master key');" onBlur="onLeaveField(this);" />
                     </td>
                 </tr>
                 <tr>
@@ -1462,32 +1443,20 @@ var PassHashCommon =
                 </tr>
                 <tr>
                     <td >
-                        <input id="hash-word" class="formfield result"
-                        onFocus="onEnterField(this, '<b>Ctrl-C</b> to copy, <b>Enter</b> to start another');"
-                        onBlur="onLeaveResultField(this);"
-                        />
+                        <input id="hash-word" class="formfield result" onFocus="onEnterField(this, '<b>Ctrl-C</b> to copy, <b>Enter</b> to start another');" onBlur="onLeaveResultField(this);" />
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <input id="submit" type="submit" value="OK"
-                        class="button"
-                        onFocus="onEnterSubmitButton(this);"
-                        onBlur="onLeaveField(this);"
-                        />
+                        <input id="submit" type="submit" value="OK" class="button" onFocus="onEnterSubmitButton(this);" onBlur="onLeaveField(this);" />
                     </td>
                     <td>
-                        <input id="bump" type="button" value="Bump"
-                        class="button"
-                        onClick="onBump(this);"
-                        />
+                        <input id="bump" type="button" value="Bump" class="button" onClick="onBump(this);" />
                     </td>
                 </tr>
                 <tr>
                     <td >
-                        <input id="reveal" type="checkbox" class="option"
-                        onClick="onReveal(this);"
-                        />
+                        <input id="reveal" type="checkbox" class="option" onClick="onReveal(this);" />
                         <span id="reveal-text" class="option">
                             Unmask
                         </span>
@@ -1505,10 +1474,7 @@ var PassHashCommon =
                             </tr>
                             <tr>
                                 <td>
-                                    <input id="digit" type="checkbox" class="option"
-                                    checked
-                                    onClick="update();"
-                                    />
+                                    <input id="digit" type="checkbox" class="option" checked onClick="update();" />
                                     <span class="option">
                                         Digit
                                     </span>
@@ -1516,10 +1482,7 @@ var PassHashCommon =
                             </tr>
                             <tr>
                                 <td>
-                                    <input id="punctuation" type="checkbox" class="option"
-                                    checked
-                                    onClick="update();"
-                                    />
+                                    <input id="punctuation" type="checkbox" class="option" checked onClick="update();" />
                                     <span class="option">
                                         Punctuation
                                     </span>
@@ -1527,10 +1490,7 @@ var PassHashCommon =
                             </tr>
                             <tr>
                                 <td>
-                                    <input id="mixedCase" type="checkbox" class="option"
-                                    checked
-                                    onClick="update();"
-                                    />
+                                    <input id="mixedCase" type="checkbox" class="option" checked onClick="update();" />
                                     <span class="option">
                                         Mixed Case
                                     </span>
@@ -1551,9 +1511,7 @@ var PassHashCommon =
                             </tr>
                             <tr>
                                 <td>
-                                    <input id="noSpecial" type="checkbox" class="option"
-                                    onClick="onNoSpecial(this);"
-                                    />
+                                    <input id="noSpecial" type="checkbox" class="option" onClick="onNoSpecial(this);" />
                                     <span class="option">
                                         No Special
                                     </span>
@@ -1561,9 +1519,7 @@ var PassHashCommon =
                             </tr>
                             <tr>
                                 <td>
-                                    <input id="digitsOnly" type="checkbox" class="option"
-                                    onClick="onDigitsOnly(this);"
-                                    />
+                                    <input id="digitsOnly" type="checkbox" class="option" onClick="onDigitsOnly(this);" />
                                     <span class="option">
                                         Digits Only
                                     </span>
@@ -1584,97 +1540,61 @@ var PassHashCommon =
                             </tr>
                             <tr>
                                 <td>
-                                    <input id="s4" name="size" type="radio" value="4"
-                                    class="option"
-                                    onClick="update(this);"
-                                    />
+                                    <input id="s4" name="size" type="radio" value="4" class="option" onClick="update(this);" />
                                     <span class="option">4</span>
                                 </td>
                                 <td>
-                                    <input id="s16" name="size" type="radio" checked value="16"
-                                    class="option"
-                                    onClick="update(this);"
-                                    />
+                                    <input id="s16" name="size" type="radio" checked value="16" class="option" onClick="update(this);" />
                                     <span class="option">16</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input id="s6" name="size" type="radio" value="6"
-                                    class="option"
-                                    onClick="update(this);"
-                                    />
+                                    <input id="s6" name="size" type="radio" value="6" class="option" onClick="update(this);" />
                                     <span class="option">6</span>
                                 </td>
                                 <td>
-                                    <input id="s18" name="size" type="radio" value="18"
-                                    class="option"
-                                    onClick="update(this);"
-                                    />
+                                    <input id="s18" name="size" type="radio" value="18" class="option" onClick="update(this);" />
                                     <span class="option">18</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input id="s8" name="size" type="radio" value="8"
-                                    class="option"
-                                    onClick="update(this);"
-                                    />
+                                    <input id="s8" name="size" type="radio" value="8" class="option" onClick="update(this);" />
                                     <span class="option">8</span>
                                 </td>
                                 <td>
-                                    <input id="s20" name="size" type="radio" value="20"
-                                    class="option"
-                                    onClick="update(this);"
-                                    />
+                                    <input id="s20" name="size" type="radio" value="20" class="option" onClick="update(this);" />
                                     <span class="option">20</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input id="s10" name="size" type="radio" value="10"
-                                    class="option"
-                                    onClick="update(this);"
-                                    />
+                                    <input id="s10" name="size" type="radio" value="10" class="option" onClick="update(this);" />
                                     <span class="option">10</span>
                                 </td>
                                 <td>
-                                    <input id="s22" name="size" type="radio" value="22"
-                                    class="option"
-                                    onClick="update(this);"
-                                    />
+                                    <input id="s22" name="size" type="radio" value="22" class="option" onClick="update(this);" />
                                     <span class="option">22</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input id="s12" name="size" type="radio" value="12"
-                                    class="option"
-                                    onClick="update(this);"
-                                    />
+                                    <input id="s12" name="size" type="radio" value="12" class="option" onClick="update(this);" />
                                     <span class="option">12</span>
                                 </td>
                                 <td>
-                                    <input id="s24" name="size" type="radio" value="24"
-                                    class="option"
-                                    onClick="update(this);"
-                                    />
+                                    <input id="s24" name="size" type="radio" value="24" class="option" onClick="update(this);" />
                                     <span class="option">24</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <input id="s14" name="size" type="radio" value="14"
-                                    class="option"
-                                    onClick="update(this);"
-                                    />
+                                    <input id="s14" name="size" type="radio" value="14" class="option" onClick="update(this);" />
                                     <span class="option">14</span>
                                 </td>
                                 <td>
-                                    <input id="s26" name="size" type="radio" value="26"
-                                    class="option"
-                                    onClick="update(this);"
-                                    />
+                                    <input id="s26" name="size" type="radio" value="26" class="option" onClick="update(this);" />
                                     <span class="option">26</span>
                                 </td>
                             </tr>
