@@ -1,10 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
 <html>
 
 <head>
 
 <title>Password Hasher</title>
 <meta http-equiv="content-type" content="text-html; charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
 
 <style>
 <!--!skin:passhash-portable.css-->
@@ -111,7 +112,7 @@ var browser = new Object();
 browser.version = parseInt(navigator.appVersion);
 browser.isNetscape = false;
 browser.isMicrosoft = false;
-if (navigator.appName.indexOf("Netscape") != -1) 
+if (navigator.appName.indexOf("Netscape") != -1)
     browser.isNetscape = true;
 else if (navigator.appName.indexOf("Microsoft") != -1)
     browser.isMicrosoft = true;
@@ -130,7 +131,7 @@ function onLoad()
     setTimeout('checkChange()',1000);
 }
 
-function validate(form) 
+function validate(form)
 {
     var siteTag   = document.getElementById('site-tag');
     var masterKey = document.getElementById('master-key');
@@ -147,7 +148,7 @@ function validate(form)
     return true;
 }
 
-function update() 
+function update()
 {
     var siteTag   = document.getElementById('site-tag');
     var masterKey = document.getElementById('master-key');
@@ -1461,7 +1462,7 @@ var PassHashCommon =
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input id="hash-word" readonly="true" class="formfield result"
+                        <input id="hash-word" class="formfield result"
                         onFocus="onEnterField(this, '<b>Ctrl-C</b> to copy, <b>Enter</b> to start another');"
                         onBlur="onLeaveResultField(this);"
                         />
@@ -1590,7 +1591,7 @@ var PassHashCommon =
                                     <span class="option">4</span>
                                 </td>
                                 <td>
-                                    <input id="s16" name="size" type="radio" value="16"
+                                    <input id="s16" name="size" type="radio" checked value="16"
                                     class="option"
                                     onClick="update(this);"
                                     />
@@ -1616,7 +1617,7 @@ var PassHashCommon =
                             <tr>
                                 <td>
                                     <input id="s8" name="size" type="radio" value="8"
-                                    class="option" checked
+                                    class="option"
                                     onClick="update(this);"
                                     />
                                     <span class="option">8</span>
@@ -1683,22 +1684,6 @@ var PassHashCommon =
             </tbody>
         </table>
         <div id="prompt" class="prompt">
-        </div>
-        <div id="blurb" class="blurb">
-<!--!locale:portable-blurb.html-->
-<ul>
-    <li>Generates hash words when the
-    <a href="http://wijjo.com/passhash/">Password Hasher</a>
-    extension is unavailable.</li>
-    <li>Backs up and uses saved site options.</li>
-    <li>For security, does not know your master key(s).</li>
-    <li>Completely self-contained.</li>
-    <li>Runs in any browser.</li>
-    <li>Works from a USB key.</li>
-    <li>Layout works well in a sidebar.</li>
-    <li>Smart [Enter] key moves to next empty field, makes a hashword, or starts over.</li>
-    <li>Use copy/paste to apply the hash word to a password field.</li>
-</ul>
         </div>
     </form>
 </body>
