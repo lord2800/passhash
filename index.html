@@ -30,7 +30,7 @@ li {
 .formfield {
     font-size: 10pt;
     font-family: serif;
-    width: 160px;
+    width: 99%;
 }
 
 .formtable {
@@ -57,7 +57,7 @@ li {
     font-weight: bold;
     color: #607888;
     text-align: left;
-    width: 78px;
+    width: 98%;
 }
 
 .optionbox {
@@ -102,11 +102,11 @@ li {
 
 .password {
     font-size: 10pt;
-    width: 160px;
+    width: 98%;
 }
 </style>
 
-<script language="JavaScript" type="text/javascript">
+<script>
 <!--!content:passhash-portable.js-->
 var browser = new Object();
 browser.version = parseInt(navigator.appVersion);
@@ -1357,13 +1357,13 @@ var PassHashCommon =
         <table class="formtable">
             <tbody>
                 <tr>
-                    <td class="title" colspan="2">Password Hasher</td>
+                    <td class="title" >Password Hasher</td>
                 </tr>
                 <tr>
-                    <td class="formlabel" colspan="2">Site Tag</td>
+                    <td class="formlabel" >Site Tag</td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td >
                         <select id="site-tag-list" class="formfield"
                         onFocus="onEnterField(this, 'Select from your previously-used site tags');"
                         onBlur="onLeaveSelectSiteTag(this);"
@@ -1439,7 +1439,7 @@ var PassHashCommon =
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td >
                         <input id="site-tag" class="formfield"
                         onFocus="onEnterField(this, 'Site or other name, e.g. google');"
                         onBlur="onLeaveField(this);"
@@ -1447,10 +1447,10 @@ var PassHashCommon =
                     </td>
                 </tr>
                 <tr>
-                    <td class="formlabel" colspan="2">Master Key</td>
+                    <td class="formlabel" >Master Key</td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td >
                         <input id="master-key" type="password" class="password" phNoMarkers
                         onFocus="onEnterField(this, 'Master key');"
                         onBlur="onLeaveField(this);"
@@ -1458,10 +1458,10 @@ var PassHashCommon =
                     </td>
                 </tr>
                 <tr>
-                    <td class="formlabel" colspan="2">Hash Word</td>
+                    <td class="formlabel" >Hash Word</td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td >
                         <input id="hash-word" class="formfield result"
                         onFocus="onEnterField(this, '<b>Ctrl-C</b> to copy, <b>Enter</b> to start another');"
                         onBlur="onLeaveResultField(this);"
@@ -1484,7 +1484,7 @@ var PassHashCommon =
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td >
                         <input id="reveal" type="checkbox" class="option"
                         onClick="onReveal(this);"
                         />
@@ -1494,7 +1494,7 @@ var PassHashCommon =
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td >
                         <table class="optiontable">
                             <tr>
                                 <td>
@@ -1540,7 +1540,7 @@ var PassHashCommon =
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td >
                         <table class="optiontable">
                             <tr>
                                 <td>
@@ -1573,7 +1573,7 @@ var PassHashCommon =
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
+                    <td >
                         <table class="optiontable">
                             <tr>
                                 <td>
