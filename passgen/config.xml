@@ -7,6 +7,7 @@
     <author email="lord2800@gmail.com" href="http://jhdev.co">
         Jeff Hubbard
     </author>
+    <preference name="Orientation" value="portrait" />
     <content src="index.html" />
     <access origin="*" />
 </widget>
