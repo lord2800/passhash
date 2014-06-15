@@ -103,7 +103,7 @@
                 <input class="form-control" type="text" disabled readonly name="hash" ng-model="hash" />
             </div>
             <div class="form-group col-md-12">
-                <button class="btn btn-primary" type="button" ng-click="passhash.hash()" ng-disabled="hashForm.siteTag.$pristine || hashForm.masterKey.$pristine">Hash</button>
+                <button class="btn btn-primary" type="button" ng-click="passhash.hash()" ng-disabled="!hashForm.siteTag.$valid || !hashForm.masterKey.$valid">Hash</button>
                 <button class="btn btn-danger"  type="button" ng-click="passhash.reset()">Reset</button>
                 <button class="btn btn-default" type="button" ng-click="passhash.copy()" ng-disabled="hash === ''">Copy</button>
             </div>
@@ -130,7 +130,7 @@
                             <label><input type="checkbox" name="restrictSpecial" ng-model="gen.restrictSpecial" /> Restrict Special Chars</label>
                         </div>
                         <div class="form-group">
-                            <select class="form-control" ng-options="name for name in savedKeys" ng-model="savedName"></select>
+                            <select class="form-control" ng-options="name for name in savedKeys" ng-model="savedName" ng-change="passhash.load(savedName)"></select>
                             <input class="form-control" type="text" name="savedName" ng-model="savedName" />
                             <button class="btn btn-info" type="button" ng-click="passhash.save(savedName, gen)">Save</button>
                             <button class="btn btn-info" type="button" ng-click="passhash.remove(savedName)">Remove</button>
