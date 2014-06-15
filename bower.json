@@ -1,0 +1,19 @@
+{
+  "name": "passhash",
+  "main": "index.html",
+  "version": "0.0.0",
+  "homepage": "https://github.com/lord2800/passhash",
+  "authors": [
+    "Jeff Hubbard <lord2800@gmail.com>"
+  ],
+  "description": "Password Hasher",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.2.18",
+    "bootstrap": "~3.1.1"
+  }
+}
